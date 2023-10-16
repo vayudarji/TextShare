@@ -1,0 +1,34 @@
+*{
+    background-color: #E1ECC8;
+}
+.container{
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    
+}
+input{
+   
+    padding-top: 0;
+}
+
+.input-container {
+    height: 50vh; 
+    width: 95%; 
+    background-color: #F7FFE5;
+    
+}
+.text-1{
+   display: flex;
+   margin-left: 27px;
+   font-size: 27px;
+
+   
+}
+.text-2{
+    width: 100%;
+    justify-self: left;
+}
+
+
+
