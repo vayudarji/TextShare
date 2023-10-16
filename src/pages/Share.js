@@ -65,8 +65,8 @@ const getDocumentByQuery = async () => {
         <button onClick={getDocumentByQuery}>Get Text</button>
         <h1>Text</h1>
       </div>
-        {/* <p>{text}</p> */}
-        <textarea className='textarea'>{text}</textarea>
+        <p>{text}</p>
+        {/* <textarea className='textarea'>{text}</textarea> */}
     </div>
   )
 
