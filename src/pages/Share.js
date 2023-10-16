@@ -6,6 +6,9 @@ const firestore = getFirestore(app);
 
 const Share = () => {
   const [message, setMessage] = useState("")
+  const [code, setCode] = useState("")
+  const [text, setText] = useState("")
+  const [encode, setEncode] = useState("")
 
 const writeData = async () => {
   const  result = await addDoc(collection(firestore,"user"),{
@@ -34,26 +37,22 @@ const getDocumentByQuery = async () => {
       }
       console.log(data.code)
       
-      
   });
-  
-  
 };
-
-
 
   return (
     <div>
-          <label>enter text here</label>
-          <input type="text" placeholder='text here' onChange={(e)=>setMessage(e.target.value)} value={message} />
-          <button onClick={writeData} >add data</button>
+          <label>Enter text here</label>
+          <input type="text" placeholder='Text' onChange={(e)=>setMessage(e.target.value)} value={message} />
           <br />
-          <label>enter code here</label>
-            <input type="text" placeholder='text here' onChange={(e)=>setCode(e.target.value)} value={code} />
-            <br />
-            <label>enter en code here</label>
-            <input type="text" placeholder='text here' onChange={(e)=>setEncode(e.target.value)} value={encode} />
-        <button onClick={getDocumentByQuery}>read</button>
+          <label>Enter code (optional)</label>
+          <input type="text" placeholder='Code' onChange={(e)=>setCode(e.target.value)} value={code} />
+          <br />
+          <button onClick={writeData} >Share Text</button>
+          <br />
+            <label>Enter encryption code here</label>
+            <input type="text" placeholder='Encryption code' onChange={(e)=>setEncode(e.target.value)} value={encode} />
+        <button onClick={getDocumentByQuery}>Get Text</button>
         <h1>Text</h1>
         <p>{text}</p>
     </div>
