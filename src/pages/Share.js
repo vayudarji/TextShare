@@ -45,7 +45,8 @@ const getDocumentByQuery = async () => {
       <div className='top-text'>
           <label className='text-1' >Enter text here</label>
           <div >            
-          <input className='input-container' type="text" onChange={(e)=>setMessage(e.target.value)} value={message} />
+          {/* <input className='input-container' type="text" onChange={(e)=>setMessage(e.target.value)} value={message} /> */}
+          <textarea className='input-container' type="text" onChange={(e)=>setMessage(e.target.value)} value={message}></textarea>
           </div>
       </div>
       <div className='text-2'>
@@ -64,7 +65,8 @@ const getDocumentByQuery = async () => {
         <button onClick={getDocumentByQuery}>Get Text</button>
         <h1>Text</h1>
       </div>
-        <p>{text}</p>
+        {/* <p>{text}</p> */}
+        <textarea className='textarea'>{text}</textarea>
     </div>
   )
 

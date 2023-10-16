@@ -29,6 +29,9 @@ input{
     width: 100%;
     justify-self: left;
 }
-
+.textarea{
+    width: 97%;
+    height: 50vh;
+}
 
 
