@@ -1,4 +1,3 @@
-This is a new open source project which had been forked by my freind vayu darji's repository.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
